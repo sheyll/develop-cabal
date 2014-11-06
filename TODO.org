@@ -1,13 +1,15 @@
 TODO
 
-X 1. Extend ConfigFlag (configBuildHcPath)
-X 2. Extend LocalBuildInfo
-  3. Pass LocalBuildInfo.buildCompiler to setupWrapper via SetupScriptOptions.useCompiler
-  4. Create configureBuildCompiler :: ConfigFlags -> (Compiler, Platform, ProgramConfig)
-  5. Create a setupScriptOptionsFromConfigFlags function that consumes ConfigFlags
-  6. Find every occurence of setupWrapper and make sure the right compiler is used
-  7. Extend SavedConfigFlags
-  8. Make sure config flags are configurable in ~/.cabal/config
-  9. In replAction check if buildPlatform == hostPlatform
- 10. let Main.reconfigure return SetupScriptOptions??
- 11. Extend 'SavedConfig'?
+(X)  1. Extend ConfigFlag (configBuildHcPath)
+(X)  2. Extend LocalBuildInfo
+(X)  3.0 Findout how LocalBuildInfo is created.
+( )  3.1 Pass LocalBuildInfo.buildCompiler to setupWrapper via SetupScriptOptions.useCompiler
+(X)  5. Create a setupScriptOptionsFromConfigFlags function that consumes ConfigFlags
+( )  6. Find every occurence of setupWrapper and make sure the right compiler is used
+(X)  7. Extend SavedConfigFlags
+( )  8. Make sure config flags are configurable in ~/.cabal/config
+( )  9. In replAction check if buildPlatform == hostPlatform
+( ) 10. let Main.reconfigure return SetupScriptOptions??
+(X) 11. Extend 'SavedConfig'?
+( ) 12. Add Config Flags to other commands
+( ) 13. Rename buildCompProgsCfg to withBuildPrograms
