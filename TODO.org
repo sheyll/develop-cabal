@@ -1,15 +1,40 @@
-TODO
-
-(X)  1. Extend ConfigFlag (configBuildHcPath)
-(X)  2. Extend LocalBuildInfo
-(X)  3.0 Findout how LocalBuildInfo is created.
-( )  3.1 Pass LocalBuildInfo.buildCompiler to setupWrapper via SetupScriptOptions.useCompiler
-(X)  5. Create a setupScriptOptionsFromConfigFlags function that consumes ConfigFlags
-( )  6. Find every occurence of setupWrapper and make sure the right compiler is used
-(X)  7. Extend SavedConfigFlags
-( )  8. Make sure config flags are configurable in ~/.cabal/config
-( )  9. In replAction check if buildPlatform == hostPlatform
-( ) 10. let Main.reconfigure return SetupScriptOptions??
-(X) 11. Extend 'SavedConfig'?
-( ) 12. Add Config Flags to other commands
-( ) 13. Rename buildCompProgsCfg to withBuildPrograms
+* DONE Extend ConfigFlag (configBuildHcPath)
+* DONE Extend LocalBuildInfo
+* DONE Findout how LocalBuildInfo is created.
+* DONE Create a setupScriptOptionsFromConfigFlags function that consumes ConfigFlags
+* DONE Extend SavedConfigFlags
+* TODO SrcDist
+* TODO Configure
+* TODO Sandbox/Timestamp
+* TODO Clean
+* TODO Copy
+* TODO HsColour
+* TODO Register
+* TODO Test (Command)
+* TODO Benchmark
+* TODO Upgrade
+* TODO Update
+* TODO List
+* TODO Info
+* TODO Fetch
+* TODO Freeze
+* TODO Get
+* TODO Unpack
+* TODO Check
+* TODO Report
+* TODO Run
+* TODO Repl
+* TODO Exec
+* TODO UserConfig
+* TODO Haddock
+* TODO Init
+* TODO Make sure config flags are configurable in ~/.cabal/config
+  CLOCK: [2014-11-07 Fr 01:51]
+* TODO In replAction check if buildPlatform == hostPlatform
+* TODO In runAction check if buildPlatform == hostPlatform
+* TODO let Main.reconfigure return SetupScriptOptions??
+* DONE Extend 'SavedConfig'?
+* TODO Add Config Flags to other commands
+* TODO Rename buildCompProgsCfg to withBuildPrograms
+* TODO Allow internal method only: Convert useCompiler, .. etc back to Maybe ... and complain/error if 'Nothing'
+* TODO Install.hs and others: provide a useDistPref default instead of: fromFlagOrDefault (useDistPref $ defaultSetupScriptOptions undefined undefined undefined)...
