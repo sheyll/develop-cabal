@@ -4,6 +4,7 @@
 
 set -e
 
+
 pushd cabal/cabal-install
-cabal test
+cabal test --show-details always --test-option --color $@
 popd

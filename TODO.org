@@ -29,7 +29,8 @@
 * TODO Haddock
 * TODO Init
 * TODO Make sure config flags are configurable in ~/.cabal/config
-  CLOCK: [2014-11-07 Fr 01:51]
+  CLOCK: [2014-11-07 Fr 01:51]--[2014-11-07 Fr 02:37] =>  0:46
+
 * TODO In replAction check if buildPlatform == hostPlatform
 * TODO In runAction check if buildPlatform == hostPlatform
 * TODO let Main.reconfigure return SetupScriptOptions??
@@ -38,3 +39,5 @@
 * TODO Rename buildCompProgsCfg to withBuildPrograms
 * TODO Allow internal method only: Convert useCompiler, .. etc back to Maybe ... and complain/error if 'Nothing'
 * TODO Install.hs and others: provide a useDistPref default instead of: fromFlagOrDefault (useDistPref $ defaultSetupScriptOptions undefined undefined undefined)...
+* TODO Add build-program-default-options in .cabal/config*
+* TODO Add build-program-default-locations in .cabal/config
