@@ -41,3 +41,4 @@
 * TODO Install.hs and others: provide a useDistPref default instead of: fromFlagOrDefault (useDistPref $ defaultSetupScriptOptions undefined undefined undefined)...
 * TODO Add build-program-default-options in .cabal/config*
 * TODO Add build-program-default-locations in .cabal/config
+* DONE Build first PackageTest
