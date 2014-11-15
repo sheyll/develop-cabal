@@ -3,8 +3,15 @@
 * DONE Findout how LocalBuildInfo is created.
 * DONE Create a setupScriptOptionsFromConfigFlags function that consumes ConfigFlags
 * DONE Extend SavedConfigFlags
-* TODO SrcDist
+* DONE Make sure config flags are configurable in ~/.cabal/config
+  CLOCK: [2014-11-07 Fr 01:51]--[2014-11-07 Fr 02:37] =>  0:46
+
+* DONE Build first PackageTest
 * TODO Configure
+** TODO after configure the custom build pats are in LocalBuildInfo
+** TODO it uses the target environment compiler when custom build tool options are omitted
+** TODO it uses the compiler/tools given by custom build tool options
+* TODO SrcDist
 * TODO Sandbox/Timestamp
 * TODO Clean
 * TODO Copy
@@ -28,9 +35,6 @@
 * TODO UserConfig
 * TODO Haddock
 * TODO Init
-* TODO Make sure config flags are configurable in ~/.cabal/config
-  CLOCK: [2014-11-07 Fr 01:51]--[2014-11-07 Fr 02:37] =>  0:46
-
 * TODO In replAction check if buildPlatform == hostPlatform
 * TODO In runAction check if buildPlatform == hostPlatform
 * TODO let Main.reconfigure return SetupScriptOptions??
@@ -41,4 +45,3 @@
 * TODO Install.hs and others: provide a useDistPref default instead of: fromFlagOrDefault (useDistPref $ defaultSetupScriptOptions undefined undefined undefined)...
 * TODO Add build-program-default-options in .cabal/config*
 * TODO Add build-program-default-locations in .cabal/config
-* DONE Build first PackageTest
