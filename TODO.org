@@ -8,7 +8,9 @@
 
 * DONE Build first PackageTest
 * TODO Configure
-** TODO after configure the custom build pats are in LocalBuildInfo
+** TODO LocalBuildInfo contains custom compiler
+*** TODO from config file
+*** TODO from configFlags
 ** TODO it uses the target environment compiler when custom build tool options are omitted
 ** TODO it uses the compiler/tools given by custom build tool options
 * TODO SrcDist
@@ -45,3 +47,4 @@
 * TODO Install.hs and others: provide a useDistPref default instead of: fromFlagOrDefault (useDistPref $ defaultSetupScriptOptions undefined undefined undefined)...
 * TODO Add build-program-default-options in .cabal/config*
 * TODO Add build-program-default-locations in .cabal/config
+* TODO rename: s/build/setup/g (-compiler,-pkg,-..)
